@@ -1,0 +1,21 @@
+#访问该项目web服务的端口
+server:
+  port: 8089
+  servlet:
+    context-path: /xsfh
+#spring相关配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xsfh?characterEncoding=utf-8
+    username: root
+    password: 123456
+
+#开启日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  encrypt:
+    body:
+      aes-key: 12 #AES加密秘钥
+      des-key: 12 #DES加密秘钥
