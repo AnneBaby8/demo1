@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xsfh.demo1.dao.OrderDao">
+    <select id="selectAllByNo" resultType="com.xsfh.demo1.entity.Order">
+        select * from xsfh.order
+        <where>
+            <if test="orderNo != null and orderNo != '' ">
+                order_no = #{orderNo}
+            </if>
+            <if test="orderSize != null and orderSize != '' ">
+                and order_size = #{orderSize}
+            </if>
+        </where>
+    </select>
+
+
+</mapper>
+
