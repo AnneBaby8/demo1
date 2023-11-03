@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * 商品模块 （控制器）
+ * 商品模块 （控制器）萨法
  */
 @RestController
 @RequestMapping("item")
