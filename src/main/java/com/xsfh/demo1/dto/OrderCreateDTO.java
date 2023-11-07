@@ -1,6 +1,5 @@
-package com.xsfh.demo1.createDTO;
+package com.xsfh.demo1.dto;
 
-import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 
 import java.math.BigDecimal;

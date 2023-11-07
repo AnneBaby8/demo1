@@ -1,6 +1,6 @@
 package com.xsfh.demo1.test.encrypt.encrypt01.controller;
 
-import com.xsfh.demo1.createDTO.StudentCreateDTO;
+import com.xsfh.demo1.dto.StudentCreateDTO;
 import com.xsfh.demo1.service.StudentService;
 import com.xsfh.demo1.test.encrypt.encrypt01.annotation.Encryption;
 import com.xsfh.demo1.test.encrypt.encrypt01.bo.UserBO;

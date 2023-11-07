@@ -1,4 +1,4 @@
-package com.xsfh.demo1.createDTO;
+package com.xsfh.demo1.dto;
 
 import com.xsfh.demo1.test.encrypt.encrypt01.annotation.EncryptField;
 import lombok.Data;

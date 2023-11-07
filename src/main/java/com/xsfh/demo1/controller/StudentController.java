@@ -1,6 +1,6 @@
 package com.xsfh.demo1.controller;
 
-import com.xsfh.demo1.createDTO.StudentCreateDTO;
+import com.xsfh.demo1.dto.StudentCreateDTO;
 import com.xsfh.demo1.entity.Student;
 import com.xsfh.demo1.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;

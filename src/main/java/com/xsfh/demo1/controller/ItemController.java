@@ -1,5 +1,7 @@
 package com.xsfh.demo1.controller;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.xsfh.demo1.bo.ItemBO;
 import com.xsfh.demo1.entity.Item;
 import com.xsfh.demo1.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +30,17 @@ public class ItemController {
      * 根据订单id获取商品详情
      * @return
      */
+    @GetMapping("selectAllByOrderId")
     public List<Item> selectAllByOrderId(int orderId){
         return itemService.selectAllByOrderId(orderId);
     }
+
+    /**
+     * 根据订单id查询数据（分页查询）
+     */
+    @GetMapping("selectPageByOrderId")
+    public IPage<Item> selectAllByPage(ItemBO itemBO){
+        return itemService.selectAllByPage(itemBO);
+    }
+
 }

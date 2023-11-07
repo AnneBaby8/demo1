@@ -13,9 +13,11 @@ spring:
 
 #开启日志
 mybatis-plus:
+  #控制台打印sql语句
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   encrypt:
     body:
       aes-key: 12 #AES加密秘钥
       des-key: 12 #DES加密秘钥
+  mapper-locations: classpath:mapper/*.xml
